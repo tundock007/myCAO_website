@@ -1,9 +1,9 @@
 FROM wordpress:latest
 
-# Install additional PHP extensions if needed
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Set proper permissions
+RUN chown -R www-data:www-data /var/www/html
 
-# Set recommended PHP settings for WordPress
+# PHP settings
 RUN { \
     echo 'upload_max_filesize = 64M'; \
     echo 'post_max_size = 64M'; \
@@ -11,8 +11,8 @@ RUN { \
     echo 'memory_limit = 256M'; \
 } > /usr/local/etc/php/conf.d/uploads.ini
 
-# Copy custom wp-config if exists
-COPY --chown=www-data:www-data . /var/www/html/
+# Copy custom theme
+COPY --chown=www-data:www-data wp-content/themes/mycao-theme /var/www/html/wp-content/themes/mycao-theme
 
 EXPOSE 80
 
