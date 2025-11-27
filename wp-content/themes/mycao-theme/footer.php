@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme Footer
+ * Theme Footer - myCAO.ai
  * @package myCAO
  */
 ?>
@@ -9,24 +9,29 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">myCAO</a>
-                <p>Modern Cloud-Based Accounting ERP System. Streamline your financial operations with comprehensive tools.</p>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
+                    <div class="logo-icon">my</div>
+                    <div class="logo-text">
+                        <span>myCAO.ai</span>
+                    </div>
+                </a>
+                <p>AI-powered bookkeeping, payroll & IRS-ready taxes for US businesses and individuals.</p>
             </div>
             <div class="footer-col">
                 <h4>Product</h4>
                 <ul class="footer-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#modules">Modules</a></li>
-                    <li><a href="#technology">Technology</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#offerings">Enterprise</a></li>
+                    <li><a href="#offerings">Business</a></li>
+                    <li><a href="#offerings">Individuals</a></li>
+                    <li><a href="#demo">Demo</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Resources</h4>
                 <ul class="footer-links">
-                    <li><a href="https://github.com/tundock007/myCAO" target="_blank">Documentation</a></li>
-                    <li><a href="https://github.com/tundock007/myCAO" target="_blank">API Reference</a></li>
-                    <li><a href="https://github.com/tundock007/myCAO" target="_blank">GitHub</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li><a href="#">Support</a></li>
                 </ul>
             </div>
@@ -34,14 +39,15 @@
                 <h4>Company</h4>
                 <ul class="footer-links">
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <?php echo date('Y'); ?> myCAO - Chief Accounting Officer System. All rights reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> myCAO.ai - AI bookkeeping, payroll & tax. All rights reserved.</p>
+            <p>Same myCAO.ai experience on web and mobile - approve, review and export from anywhere.</p>
         </div>
     </div>
 </footer>

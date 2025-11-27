@@ -1,80 +1,127 @@
 <?php get_header(); ?>
 
+<!-- Hero Section -->
 <section class="hero" id="home">
     <div class="container">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Your <span>Chief Accounting Officer</span> in the Cloud</h1>
-                <p>A comprehensive, cloud-based accounting ERP system designed to streamline financial operations for modern businesses.</p>
+                <div class="hero-badges">
+                    <span class="badge badge-green">Web & Mobile</span>
+                    <span class="badge badge-dark">For US GAAP, payroll & IRS taxes.</span>
+                </div>
+                <h1>One workspace for US bookkeeping, payroll & IRS-ready taxes.</h1>
+                <p>myCAO.ai helps businesses and individuals remain compliant with IRS regulations, state tax obligations and payroll tax rules - with AI spotting issues before the IRS does.</p>
                 <div class="hero-buttons">
-                    <a href="https://github.com/tundock007/myCAO" class="btn btn-primary" target="_blank">🚀 Get Started</a>
-                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                    <a href="#waitlist" class="btn btn-primary">Join US waitlist</a>
+                    <a href="#demo" class="btn btn-secondary">Watch US demo teaser</a>
+                </div>
+                <p class="hero-note">Built for US enterprises, SMEs and individuals - including US expats who still have US-source income.</p>
+            </div>
+            <div class="phone-preview">
+                <div class="phone-frame">
+                    <div class="phone-header">Mobile preview · iPhone 15 Pro (Blue titanium)</div>
+                    <div class="phone-content">
+                        <div class="phone-title">
+                            <h4>US Tax Center</h4>
+                            <span class="phone-dropdown">ACME US ▼</span>
+                        </div>
+                        <div class="phone-section">
+                            <h5>Tax snapshot</h5>
+                            <p>Corporate Tax: $85.3M · Sales Tax: $14.2M<br>3 filings due · 1 e-file rejected.</p>
+                        </div>
+                        <div class="phone-section">
+                            <h5>AI Copilot</h5>
+                            <p>We found 12 personal card expenses that should be reclassified out of deductible P&L.</p>
+                        </div>
+                        <div class="phone-section">
+                            <h5>Payroll & Taxes</h5>
+                            <p>Payroll Tax: $3.19M ready -<br>Federal/State/FICA balanced.<br>Approve remittances from your phone.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section section-alt">
+<!-- Offerings Section -->
+<section class="offerings" id="offerings">
     <div class="container">
-        <div class="stats-grid">
-            <div class="stat-item"><h3>11+</h3><p>Core Modules</p></div>
-            <div class="stat-item"><h3>2.0</h3><p>Latest Version</p></div>
-            <div class="stat-item"><h3>100%</h3><p>Cloud Native</p></div>
-            <div class="stat-item"><h3>24/7</h3><p>Availability</p></div>
+        <div class="section-header">
+            <h2>Launch offerings for United States</h2>
+            <p>Ramp-style tiers for enterprise, growing businesses and individuals - tuned to US tax law.</p>
         </div>
-    </div>
-</section>
-
-<section class="section" id="features">
-    <div class="container">
-        <div class="section-header"><h2>Powerful Features</h2><p>Everything you need to manage your company's finances</p></div>
-        <div class="features-grid">
-            <div class="feature-card"><div class="feature-icon">📊</div><h3>Chart of Accounts</h3><p>Comprehensive account management with trial balance tracking.</p></div>
-            <div class="feature-card"><div class="feature-icon">🔄</div><h3>Transaction Feed</h3><p>Real-time transaction processing with AI classification.</p></div>
-            <div class="feature-card"><div class="feature-icon">🏦</div><h3>Bank Reconciliation</h3><p>Automated reconciliation with intelligent matching.</p></div>
-            <div class="feature-card"><div class="feature-icon">📈</div><h3>Financial Statements</h3><p>P&L, Balance Sheet, and Cash Flow statements.</p></div>
-            <div class="feature-card"><div class="feature-icon">📱</div><h3>Forecasting</h3><p>Scenario modeling and what-if analysis.</p></div>
-            <div class="feature-card"><div class="feature-icon">🔒</div><h3>Tax Compliance</h3><p>Multi-jurisdiction tax center with automation.</p></div>
+        <div class="offerings-grid">
+            <div class="offering-card">
+                <h3>ENTERPRISE - US Business Tax Center</h3>
+                <ul>
+                    <li>Unified US GAAP + Tax books with Book-Tax Mapper aligned to IRS regulations.</li>
+                    <li>Corporate Tax, Sales Tax, Withholding Tax, Payroll Tax dashboards with IRS-ready export packs.</li>
+                    <li>E-invoicing integration with IRS e-file systems and digital tax compliance.</li>
+                    <li>AI narratives for permanent & temporary differences by entity.</li>
+                </ul>
+            </div>
+            <div class="offering-card">
+                <h3>BUSINESS - Bookkeeping + payroll in one US-native system</h3>
+                <ul>
+                    <li>Ramp-inspired P2P approvals and card spend for US vendors & employees.</li>
+                    <li>Payroll engine with Federal, State, FICA, and SUTA rules baked in.</li>
+                    <li>Monthly close checklist with auto bank/vendor/customer reconciliations.</li>
+                    <li>US-specific alerts - e-file rejections, payroll tax delinquencies, due dates.</li>
+                </ul>
+            </div>
+            <div class="offering-card">
+                <h3>INDIVIDUALS - Keep individuals compliant - at home & abroad</h3>
+                <ul>
+                    <li>Personal income tax estimator with IRS tax code logic.</li>
+                    <li>Automatically separates personal vs business transactions from card & bank feeds.</li>
+                    <li>Highlights both federal and state-level obligations with reminders ahead of deadlines.</li>
+                    <li>Supports US expats tracking US-source salaries, rents and dividends.</li>
+                    <li>Secure web & mobile access so you and your advisor see the same numbers.</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
 
-<section class="section section-alt" id="modules">
-    <div class="container">
-        <div class="section-header"><h2>Complete ERP Modules</h2><p>End-to-end business process management</p></div>
-        <div class="modules-grid">
-            <div class="module-card"><span class="module-status">Complete v2.0</span><h3>Order-to-Cash (O2C)</h3><p>Sales Orders, Invoices, Shipments, AR Subledger, Payments</p></div>
-            <div class="module-card"><span class="module-status">Complete v2.0</span><h3>Procure-to-Pay (P2P)</h3><p>Purchase Requisitions, POs, Goods Receipt, AP Subledger</p></div>
-            <div class="module-card"><span class="module-status">Complete v2.0</span><h3>Inventory Management</h3><p>Stock tracking, valuation, warehouse management</p></div>
-            <div class="module-card"><span class="module-status">Complete v2.0</span><h3>Fixed Assets</h3><p>Asset lifecycle, depreciation, tracking</p></div>
-            <div class="module-card"><span class="module-status">Complete v2.0</span><h3>Payroll Module</h3><p>Payroll processing, tax withholdings, benefits</p></div>
-            <div class="module-card"><span class="module-status">Complete v2.0</span><h3>Financial Reporting</h3><p>Custom reports, analytics, business intelligence</p></div>
+        <!-- Demo & Waitlist -->
+        <div class="cta-grid" id="demo">
+            <div class="cta-card">
+                <h3>US video demo (coming soon)</h3>
+                <p>Watch how myCAO.ai pulls US books, payroll & e-invoices together, then exports an IRS-ready pack for upload to tax software.</p>
+                <div class="video-placeholder">
+                    <div class="play-btn">▶</div>
+                </div>
+            </div>
+            <div class="cta-card" id="waitlist">
+                <h3>Join the US waitlist</h3>
+                <p>Tell us who you are - we'll prioritize controllers, founders and US-based businesses.</p>
+                <form class="waitlist-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="you@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Company</label>
+                        <input type="text" placeholder="Company name">
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select>
+                            <option>Select your role</option>
+                            <option>Founder / CEO</option>
+                            <option>CFO / Controller</option>
+                            <option>Accountant</option>
+                            <option>Individual</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
-
-<section class="section" id="technology">
-    <div class="container">
-        <div class="section-header"><h2>Modern Technology Stack</h2><p>Enterprise-grade for reliability and performance</p></div>
-        <div class="tech-grid">
-            <div class="tech-item">⚡ Node.js 18+</div>
-            <div class="tech-item">🚂 Express.js</div>
-            <div class="tech-item">🐘 PostgreSQL</div>
-            <div class="tech-item">💎 Prisma ORM</div>
-            <div class="tech-item">⚛️ React 18</div>
-            <div class="tech-item">⚡ Vite</div>
-            <div class="tech-item">🎨 Material-UI</div>
-            <div class="tech-item">📊 Chart.js</div>
-        </div>
-    </div>
-</section>
-
-<section class="cta-section" id="contact">
-    <div class="container">
-        <h2>Ready to Transform Your Accounting?</h2>
-        <p>Get started with myCAO today</p>
-        <a href="https://github.com/tundock007/myCAO" class="btn btn-primary" target="_blank" style="background:#fff;color:#2563eb;">⭐ Star on GitHub</a>
     </div>
 </section>
 
