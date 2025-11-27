@@ -1,0 +1,30 @@
+# WordPress
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup-db/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Database
+*.sql
+*.sql.gz
