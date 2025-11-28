@@ -251,38 +251,4 @@
     </div>
 </section>
 
-<!-- Technology Section -->
-<section class="tech-section" id="technology">
-    <div class="container">
-        <div class="section-header">
-            <h2>Built with Modern Technology</h2>
-            <p>Enterprise-grade stack for reliability, security and performance</p>
-        </div>
-        <div class="tech-grid">
-            <div class="tech-column">
-                <h4>Backend</h4>
-                <div class="tech-items">
-                    <div class="tech-item"><span>⚡</span> Node.js 18+</div>
-                    <div class="tech-item"><span>🚂</span> Express.js</div>
-                    <div class="tech-item"><span>🐘</span> PostgreSQL</div>
-                    <div class="tech-item"><span>💎</span> Prisma ORM</div>
-                    <div class="tech-item"><span>🔌</span> Socket.io</div>
-                    <div class="tech-item"><span>🔐</span> JWT Auth</div>
-                </div>
-            </div>
-            <div class="tech-column">
-                <h4>Frontend</h4>
-                <div class="tech-items">
-                    <div class="tech-item"><span>⚛️</span> React 18</div>
-                    <div class="tech-item"><span>⚡</span> Vite</div>
-                    <div class="tech-item"><span>🎨</span> Material-UI</div>
-                    <div class="tech-item"><span>📊</span> Chart.js</div>
-                    <div class="tech-item"><span>🔄</span> React Query</div>
-                    <div class="tech-item"><span>🛣️</span> React Router</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <?php get_footer(); ?>
