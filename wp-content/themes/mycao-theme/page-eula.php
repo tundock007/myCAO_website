@@ -14,10 +14,6 @@ get_header();
             <header class="legal-header">
                 <h1>Temporary End-User License Agreement (EULA)</h1>
                 <p class="last-updated">Last Updated: December 2025</p>
-                <div class="status-banner">
-                    <span class="status-icon">⚠️</span>
-                    <p><strong>Status:</strong> This is a temporary placeholder agreement used solely for development, testing, and sandbox integrations. The final EULA will be published prior to public launch.</p>
-                </div>
             </header>
 
             <section class="legal-section">
