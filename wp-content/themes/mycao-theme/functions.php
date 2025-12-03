@@ -244,3 +244,14 @@ function mycao_flush_rewrite_rules() {
     flush_rewrite_rules();
 }
 add_action('after_switch_theme', 'mycao_flush_rewrite_rules');
+
+/**
+ * Auto-flush rewrite rules if our rules are missing
+ */
+function mycao_maybe_flush_rewrite_rules() {
+    $rules = get_option('rewrite_rules');
+    if (!isset($rules['^privacy-policy/?$']) || !isset($rules['^eula/?$'])) {
+        flush_rewrite_rules();
+    }
+}
+add_action('init', 'mycao_maybe_flush_rewrite_rules', 20);
