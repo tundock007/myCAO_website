@@ -40,8 +40,8 @@
                 <ul class="footer-links">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Careers</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">Privacy Policy</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/eula/')); ?>">Terms of Service</a></li>
                 </ul>
             </div>
         </div>
