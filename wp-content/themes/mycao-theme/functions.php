@@ -193,3 +193,54 @@ add_action('customize_register', 'mycao_customize_register');
 function mycao_get_theme_mod($key, $default = '') {
     return get_theme_mod($key, $default);
 }
+
+/**
+ * Register Custom Rewrite Rules for Legal Pages
+ */
+function mycao_add_rewrite_rules() {
+    add_rewrite_rule('^privacy-policy/?$', 'index.php?mycao_page=privacy-policy', 'top');
+    add_rewrite_rule('^eula/?$', 'index.php?mycao_page=eula', 'top');
+}
+add_action('init', 'mycao_add_rewrite_rules');
+
+/**
+ * Register Custom Query Vars
+ */
+function mycao_query_vars($vars) {
+    $vars[] = 'mycao_page';
+    return $vars;
+}
+add_filter('query_vars', 'mycao_query_vars');
+
+/**
+ * Load Custom Templates for Legal Pages
+ */
+function mycao_template_include($template) {
+    $mycao_page = get_query_var('mycao_page');
+    
+    if ($mycao_page === 'privacy-policy') {
+        $new_template = locate_template('page-privacy-policy.php');
+        if ($new_template) {
+            return $new_template;
+        }
+    }
+    
+    if ($mycao_page === 'eula') {
+        $new_template = locate_template('page-eula.php');
+        if ($new_template) {
+            return $new_template;
+        }
+    }
+    
+    return $template;
+}
+add_filter('template_include', 'mycao_template_include');
+
+/**
+ * Flush Rewrite Rules on Theme Activation
+ */
+function mycao_flush_rewrite_rules() {
+    mycao_add_rewrite_rules();
+    flush_rewrite_rules();
+}
+add_action('after_switch_theme', 'mycao_flush_rewrite_rules');
